@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Registrasi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         /*@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');*/
@@ -32,13 +32,17 @@
             </div>
         </div>
         <form action="">
-        <div class="row border shadow px-5" style="border-radius: 20px">
+        <div class="">
             <div class="col">
-                <p class="text-center fw-bolder fs-1 mt-5">Registration Form</p>
+                <p class="text-center fw-bolder fs-1 mt-5">Formulir registrasi</p>
             </div>
             <div class="w-100"></div>
-        <!-- </div> -->
-            <!-- <div class="row border"> -->
+         </div>
+             <div class="row border-sm shadow-lg px-5" style="border-radius: 20px">
+                 <div class="col-auto m-auto">
+                     <p class="text-danger text-center fs-2 border-bottom border-danger mt-3" style="font-weight: bolder;">Data Diri Anda</p>
+                 </div>
+                 <div class="w-100"></div>
                 <div class="col">
                     <label for="nama_lengkap" class="form-label">Nama lengkap <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
                     <input type="text" name="nama_lengkap" class="form-control" id="nama_lengkap" placeholder="Nama lengkap">
@@ -48,56 +52,63 @@
                     <label for="nama_panggilan" class="form-label">Nama panggilan <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
                     <input type="text" class="form-control" name="nama_panggilan" id="nama_panggilan" placeholder="Nama panggilan">
                 </div>
-                <div class="w-100"></div>
                 <div class="col">
                     <label for="nis" class="form-label">NIS <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
                     <input type="text" class="form-control" name="nis" id="nis" placeholder="NIS">
                 </div>
+                 <div class="w-100"></div>
+                 <div class="col">
+                     <label for="kelas" class="form-label">Kelas <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
+                     <select class="form-select" name="kelas" id="kelas">
+                         <option value="x_rpl_1">X RPL 1</option>
+                         <option value="x_rpl_2">X RPL 2</option>
+                         <option value="x_rpl_3">X RPL 3</option>
+                         <option value="x_tel">X TEL</option>
+                         <option value="x_tja">X TJA</option>
+                         <option value="x_tkj_1">X TKJ 1</option>
+                         <option value="x_tkj_2">X TKJ 2</option>
+                         <option value="x_tkj_3">X TKJ 3</option>
+                         <option value="x_tkj_4">X TKJ 4</option>
+                         <option value="x_tkj_5">X TKJ 5</option>
+                         <option value="x_upw">X UPW</option>
+                         <option value="xi_par">XI PAR</option>
+                         <option value="xi_rpl">XI RPL</option>
+                         <option value="xi_tel_1">XI TEL 1</option>
+                         <option value="xi_tel_2">XI TEL 2</option>
+                         <option value="xi_tel_3">XI TEL 3</option>
+                         <option value="xi_tja_1">XI TJA 1</option>
+                         <option value="xi_tja_2">XI TJA 2</option>
+                         <option value="xi_tkj_1">XI TKJ 1</option>
+                         <option value="xi_tkj_2">XI TKJ 2</option>
+                         <option value="xi_tkj_3">XI TKJ 3</option>
+                         <option value="xi_tkj_4">XI TKJ 4</option>
+                         <option value="xi_tkj_5">XI TKJ 5</option>
+                         <option value="xii_par_1">XII PAR 1</option>
+                         <option value="xii_par_2">XII PAR 2</option>
+                         <option value="xii_tel_1">XII TEL 1</option>
+                         <option value="xii_tel_2">XII TEL 2</option>
+                         <option value="xii_tel_3">XII TEL 3</option>
+                         <option value="xii_tja_1">XII TJA 1</option>
+                         <option value="xii_tja_2">XII TJA 2</option>
+                         <option value="xii_tkj_1">XII TKJ 1</option>
+                         <option value="xii_tkj_2">XII TKJ 2</option>
+                         <option value="xii_tkj_3">XII TKJ 3</option>
+                         <option value="xii_tkj_4">XII TKJ 4</option>
+                         <option value="xii_tkj_5">XII TKJ 5</option>
+                     </select>
+                 </div>
+                 <div class="col">
+                     <label for="nomor_telepon" class="form-label">Nomor telepon <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
+                     <input type="tel" class="form-control" name="nomor_telepon" id="nomor_telepon" placeholder="Nomor telepon">
+                 </div>
+                 <div class="w-100"></div>
+                 <div class="col-auto m-auto mt-3">
+                     <p class="text-danger text-center fs-2 border-bottom border-danger" style="font-weight: bolder;">Data Akun</p>
+                 </div>
+                 <div class="w-100"></div>
                 <div class="col">
-                    <label for="username" class="form-label">Username <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
+                    <label for="username" class="form-label">Nama pengguna <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
                     <input type="text" class="form-control" name="username" id="username" placeholder="Username">
-                </div>
-                <div class="w-100"></div>
-                <div class="col">
-                    <label for="kelas" class="form-label">Kelas <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
-<!--                    <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Kelas">-->
-                    <select class="form-select" name="kelas" id="kelas">
-                        <option value="x_rpl_1">X RPL 1</option>
-                        <option value="x_rpl_2">X RPL 2</option>
-                        <option value="x_rpl_3">X RPL 3</option>
-                        <option value="x_tel">X TEL</option>
-                        <option value="x_tja">X TJA</option>
-                        <option value="x_tkj_1">X TKJ 1</option>
-                        <option value="x_tkj_2">X TKJ 2</option>
-                        <option value="x_tkj_3">X TKJ 3</option>
-                        <option value="x_tkj_4">X TKJ 4</option>
-                        <option value="x_tkj_5">X TKJ 5</option>
-                        <option value="x_upw">X UPW</option>
-                        <option value="xi_par">XI PAR</option>
-                        <option value="xi_rpl">XI RPL</option>
-                        <option value="xi_tel_1">XI TEL 1</option>
-                        <option value="xi_tel_2">XI TEL 2</option>
-                        <option value="xi_tel_3">XI TEL 3</option>
-                        <option value="xi_tja_1">XI TJA 1</option>
-                        <option value="xi_tja_2">XI TJA 2</option>
-                        <option value="xi_tkj_1">XI TKJ 1</option>
-                        <option value="xi_tkj_2">XI TKJ 2</option>
-                        <option value="xi_tkj_3">XI TKJ 3</option>
-                        <option value="xi_tkj_4">XI TKJ 4</option>
-                        <option value="xi_tkj_5">XI TKJ 5</option>
-                        <option value="xii_par_1">XII PAR 1</option>
-                        <option value="xii_par_2">XII PAR 2</option>
-                        <option value="xii_tel_1">XII TEL 1</option>
-                        <option value="xii_tel_2">XII TEL 2</option>
-                        <option value="xii_tel_3">XII TEL 3</option>
-                        <option value="xii_tja_1">XII TJA 1</option>
-                        <option value="xii_tja_2">XII TJA 2</option>
-                        <option value="xii_tkj_1">XII TKJ 1</option>
-                        <option value="xii_tkj_2">XII TKJ 2</option>
-                        <option value="xii_tkj_3">XII TKJ 3</option>
-                        <option value="xii_tkj_4">XII TKJ 4</option>
-                        <option value="xii_tkj_5">XII TKJ 5</option>
-                    </select>
                 </div>
                 <div class="col">
                     <label for="password" class="form-label">Password <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
@@ -105,17 +116,12 @@
                 </div>
                 <div class="w-100"></div>
                 <div class="col">
-                    <label for="nomor_telepon" class="form-label">Nomor telepon <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
-                    <input type="tel" class="form-control" name="nomor_telepon" id="nomor_telepon" placeholder="Nomor telepon">
-                </div>
-                <div class="col">
                     <label for="konfirmasi_password" class="form-label">Konfirmasi password <sup><i class="bi bi-asterisk text-danger"></i></sup></label>
                     <input type="password" class="form-control" id="konfirmasi_password" placeholder="Konfirmasi password">
                 </div>
-            <!-- <div class="w-100"></div> -->
                 <div class="w-100"></div>
                 <div class="col">
-                    <button type="submit" class="btn btn-danger w-100 m-auto my-5 fs-3 px-5" style="border-radius: 5px;">Register</button>
+                    <button type="submit" class="btn btn-danger w-100 m-auto my-5 fs-3 px-5" style="border-radius: 5px;">Daftar</button>
                 </div>
             </div>
             <div class="col text-center mt-5">
