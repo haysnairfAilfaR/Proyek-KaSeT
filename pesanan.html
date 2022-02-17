@@ -89,10 +89,20 @@
                         <div class="col-auto">... Warung</div>
                         <div class="col-auto">$harga</div>
                     </div>
-                    <div class="card-footer w-100 text-center text-light mt-4 d-flex justify-content-between align-items-center" style="border-radius: 0 0 20px 0; background-color: gray;">
-                        Belum dikonfirmasi 
-                        <div>
+                    <div class="card-footer w-100 text-center text-light mt-4 d-flex flex-sm-row flex-column justify-content-between align-items-baseline" style="border-radius: 0 0 20px 0; background-color: gray;">
+                        <p>Belum dikonfirmasi</p>
+                        <div class="d-none d-sm-block">
                             <button type="submit" class="btn btn-danger">Batalkan</button> <button type="submit" class="btn btn-success">Konfirmasi</button>
+                        </div>
+                        <div class="container d-sm-none">
+                            <div class="row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-danger w-100">Batalkan</button>
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-success w-100">Konfirmasi</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
