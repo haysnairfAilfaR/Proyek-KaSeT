@@ -17,8 +17,8 @@
         .carousel-item img {
             filter: brightness(50%);
         }
-
-        .pilihan-menu:active {
+        
+        .pilihan-menu-aktif {
             background-color: black;
             color: white;
         }
@@ -141,10 +141,10 @@
             </div>
         </div>
         <div class="row justify-content-center mb-5">
-            <div class="col-auto"><a class="text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Makanan</a></div>
-            <div class="col-auto"><a class="text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Minuman</a></div>
-            <div class="col-auto"><a class="text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Snack</a></div>
-            <div class="col-auto"><a class="text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Semua</a></div>
+            <div class="col-auto"><a id="semua" class="btn text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Semua</a></div>
+            <div class="col-auto"><a class="btn text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Makanan</a></div>
+            <div class="col-auto"><a class="btn text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Minuman</a></div>
+            <div class="col-auto"><a class="btn text-decoration-none fs-5 text-dark fw-bold pilihan-menu" href="#">Snack</a></div>
         </div>
         <div class="row gy-5">
             <div class="col-12 col-md-6 col-lg-4">
@@ -174,16 +174,20 @@
                 <p class="fw-bolder fs-1 text-light text-center">Tentang Kami</p>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center px-4">
             <div class="col-lg-6 d-none d-lg-block text-center">
                 <img src="https://blogpictures.99.co/makanan-khas-indonesia-header.png" alt="Gambar Kami" class="img-fluid">
             </div>
             <div class="col pe-5">
                 <p class="fs-2 fw-bolder text-light d-none d-lg-block">Siapa Kami?</p>
-                <br>
                 <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio error harum iste iusto laborum nam, necessitatibus nisi non odit omnis possimus praesentium repellendus tempora voluptatibus! Assumenda distinctio molestias saepe!</p>
-                <hr class="text-light">
-                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at delectus eos. Exercitationem, incidunt, reiciendis! Eligendi hic, neque optio quisquam sed similique tenetur voluptatibus. Dignissimos, expedita, repudiandae. Amet, fuga itaque?</p>
+                <p class="text-light mt-5 fs-2 fw-bolder" >Didukung oleh</p>
+                <div class="row mt-4">
+                    <div class="col-auto"><img height="50px" style="filter: brightness(0%)" src="" alt="Logo KaSeT"></div>
+                    <div class="col-auto"><img height="50px" style="filter: brightness(0%)" src="https://avatars.githubusercontent.com/u/63014604?s=200&v=4" alt="Logo Metrotech DIgital Asia"></div>
+                    <div class="col-auto"><img height="50px" style="filter: brightness(0%)" src="https://www.pikpng.com/pngl/b/56-566268_logo-telkom-school-png-graphics-clipart.png" alt="Logo Telkom Schools Makassar"></div>
+                    <div class="col-auto"><img height="50px" style="filter: brightness(0%)" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Logo_Yayasan_Pendidikan_Telkom.png" alt="Logo Logo_Yayasan_Pendidikan_Telkom"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -202,14 +206,8 @@
             <div class="col col-lg-6">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-auto"><img height="50px" src="" alt="Logo KaSeT"></div>
-                        <div class="col-auto"><img height="50px" src="https://avatars.githubusercontent.com/u/63014604?s=200&v=4" alt="Logo Metrotech DIgital Asia"></div>
-                        <div class="col-auto"><img height="50px" src="https://www.pikpng.com/pngl/b/56-566268_logo-telkom-school-png-graphics-clipart.png" alt="Logo Telkom Schools Makassar"></div>
-                        <div class="col-auto"><img height="50px" src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Logo_Yayasan_Pendidikan_Telkom.png" alt="Logo Logo_Yayasan_Pendidikan_Telkom"></div>
-                    </div>
-                    <div class="row mt-3">
                         <div class="col-12">
-                            <p class="fw-bold fs-2 text-light">Follow IG Kami Di</p>
+                            <p class="fw-bold fs-1 text-light">Follow IG Kami Di</p>
                         </div>
                         <div class="col">
                             <form action="https://www.instagram.com/" target="_blank">
@@ -245,6 +243,8 @@
                     $('#daftar').removeClass('border-light').addClass('border-danger');
                 }
             })
+
+            $("#semua").focus();
         })
     </script>
     <!-- Akhir Jquery Bootstrap Popper Scrollspy -->
